@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Budget</title>
+  <meta name="author" content="Marcin Czepiel">
+  <meta name="destription" content="Projekt zaliczeniowy">
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+  rel="stylesheet"/>
+
+</head>
+<body>
+  <div class="container"> 
+    <nav>
+      <div class="logo"></div>
+    </nav>    
+    <main>
+      <div class="title-panel"></div>
+      <div class="main-panel">
+        <div class="incomes">
+          <h1>przychody:</h1>
+          <div class="inc-insert-bar">
+            <input type="text" id="inc-title" name="income-title" placeholder="Nazwa przychodu">
+            <input type="text" id="inc-value" class="income-val" name="income-value" placeholder="Kwota">
+            <button id="add-income">dodaj</button>
+          </div>
+          <div class="inc-items-list"></div>
+          <div class="inc-total">Suma przychodów <span id="total-income"></span> PLN</div>
+        </div>
+      
+        <div class="outcomes">
+          <h1>wydatki:</h1>
+          <div class="outc-insert-bar">
+            <input type="text" id="outc-title" name="outcome-title" placeholder="Nazwa wydatku">
+            <input type="text" id="outc-value" class="outcome-val" name="outcome-value" placeholder="Kwota">
+            <button id="add-outcome">dodaj</button>
+          </div>
+          <div class="outc-items-list"></div>
+          <div class="outc-total">Suma wydatków <span id="total-outcome"></span> PLN</div>
+        </div>
+      </div>
+    </main>
+    <footer>  </footer>
+  </div>   
+  <script src="scripts/budget.js" defer> </script>
+</body>
+</html>
